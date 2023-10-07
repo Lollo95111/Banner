@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        /* Stili per il banner */
+        .banner {
+            width: max-content;
+            height: max-content;
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            overflow: hidden;
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/21/14/12/books-1845614_1280.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 20%;
+        }
+
+       
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+
+        @keyframes slide-on {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        button{
+
+            background-color: rgb(208, 208, 89);
+            color: black;
+        }
+
+
+
+
+
+        /* Applica l'animazione al banner */
+        .animated-banner {
+            background-color: wheat;
+            animation: slide-in 2.5s linear infinite alternate;
+        }
+
+        .animated-banner2 {
+            animation: slide-on 2.5s linear infinite alternate;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+
+   <div class="container">
+    
+            <div class="banner">
+                
+                <p class="animated-banner" >Scopri le nostre offerte speciali!</p>
+                <p class="animated-banner" >Qualità</p>
+                <p class="animated-banner" >Sicurezza</p>
+                <img width="100px" class="logo" src="https://www.itekevo.com/wp-content/uploads/2021/01/ITHGH430.png" alt="">
+                <button class="animated-banner2">ADD</button>
+            </div>
+
+   </div>
+            
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
